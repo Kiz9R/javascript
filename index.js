@@ -75,4 +75,11 @@ const popValue=hobbies.pop();
 console.log(hobbies,popValue);
 hobbies.shift();
 console.log(hobbies);
-console.log(`hello ${popValue}`);
+console.log(`hello ${hobbies}`);
+
+hobbies.splice(0,1);
+console.log(hobbies);
+hobbies.splice(0,0,"good food");
+console.log(hobbies);
+hobbies.splice(-1,1);
+console.log(hobbies);
