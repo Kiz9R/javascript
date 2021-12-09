@@ -62,6 +62,17 @@ const moreNumbers=Array.from(`hi!`);
 console.log(moreNumbers);
 
 
-const list=document.querySelectorAll("li");
-const unlist=Array.from(list);
-console.log(unlist);
+// const list=document.querySelectorAll("li");
+// const unlist=Array.from(list);
+// console.log(unlist);
+
+const hobbies=[`sport`,`cooking`]
+hobbies.push(`reading`);
+console.log(hobbies);
+hobbies.unshift(`coding`);
+console.log(hobbies);
+const popValue=hobbies.pop();
+console.log(hobbies,popValue);
+hobbies.shift();
+console.log(hobbies);
+console.log(`hello ${popValue}`);
