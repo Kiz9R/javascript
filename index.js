@@ -47,3 +47,21 @@ function hello(name) {
 }
 
 hello('jhon');
+
+// array
+const numbers=[1,2,3];
+console.log(numbers);
+
+// const moreNumbers=new Array(5);
+// console.log(moreNumbers);
+
+const yetMoreNumbers=Array.of(3);
+console.log(yetMoreNumbers);
+
+const moreNumbers=Array.from(`hi!`);
+console.log(moreNumbers);
+
+
+const list=document.querySelectorAll("li");
+const unlist=Array.from(list);
+console.log(unlist);
