@@ -85,3 +85,53 @@ hobbies.splice(-1,1);
 console.log(hobbies);
 
 console.log(hobbies.indexOf('cooking'));
+
+const array1 = [5, 12, 8, 130, 44];
+
+const found = array1.find(element => element > 10);
+const found1 = array1.findIndex(element => element > 10);
+
+console.log(`${found} and ${found1}`);
+
+// for each loop and for loop respectively
+
+const array2 = [];
+for(const i of array1) {
+    array2.push(i);
+}
+console.log(array2.length);
+
+// array1.forEach((array2,idx,array1) => {
+//     array2.push(array1[idx]);
+// })
+// console.log(array2);
+
+for(let i=0; i<array2.length; i++) {
+    console.log(array2[i]);
+}
+
+// MAP
+const prices=[50,20,10,90,30];
+const tax=0.19;
+
+const price=prices.map((price,idx,prices) => {
+    const priceobj={ index:idx, price:price*(1+tax) };
+    return priceobj;
+})
+
+console.log(price);
+
+//sorting and reverse
+const sortedPrices= prices.sort((a,b)=>{
+    if(a>b){
+        return 1;
+    }else if(a===b){
+        return 0;
+    }else{
+        return -1;
+    }
+})
+
+console.log(sortedPrices);
+
+console.log(sortedPrices.reverse());
