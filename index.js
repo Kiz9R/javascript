@@ -83,3 +83,5 @@ hobbies.splice(0,0,"good food");
 console.log(hobbies);
 hobbies.splice(-1,1);
 console.log(hobbies);
+
+console.log(hobbies.indexOf('cooking'));
